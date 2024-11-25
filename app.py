@@ -30,7 +30,7 @@ y = df['5th']  # Target (5th semester score)
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-# Train a model (Random Forest as an example)
+# Train a model (Random Forest)
 model_rf = RandomForestRegressor(n_estimators=200, random_state=21)
 model_rf.fit(X_scaled, y)
 
